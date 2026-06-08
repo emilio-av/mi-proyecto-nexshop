@@ -1,6 +1,9 @@
 Mini Proyecto NexShop — Base de Datos
+
 Alumno: Emilio Anaya Verdugo
+
 Proyecto de diseño e implementación de una base de datos relacional para NexShop Group S.A., empresa con tienda online y tres tiendas físicas. El modelo cubre catálogo, precios, promociones, proveedores, stock, pedidos online, ventas presenciales, envíos, devoluciones, incidencias, empleados, valoraciones y fidelización.
+
 Estructura
 ```text
 mi-proyecto-nexshop/
@@ -15,6 +18,7 @@ mi-proyecto-nexshop/
     └── consultas.sql
 ```
 Cómo ejecutar
+
 Crear la base de datos en MySQL 8 o MariaDB compatible.
 Ejecutar `sql/schema.sql`.
 Ejecutar `sql/datos.sql`.
