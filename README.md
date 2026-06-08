@@ -74,8 +74,6 @@ erDiagram
     pedido_online ||--o{ movimiento_puntos : genera
 ```
 
-> El diagrama E-R se añadirá cuando esté finalizado.
-
 ---
 
 # 📂 Estructura del Repositorio
