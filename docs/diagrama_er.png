@@ -1,0 +1,51 @@
+# 📊 Diagrama Entidad-Relación
+
+```mermaid
+erDiagram
+    sede ||--o{ empleado : tiene
+    categoria ||--o{ subcategoria : contiene
+    subcategoria ||--o{ producto : clasifica
+    producto ||--o{ historial_precio : tiene
+    empleado ||--o{ proveedor : representa
+    producto ||--o{ producto_proveedor : suministrado
+    proveedor ||--o{ producto_proveedor : suministra
+
+    cliente ||--o{ direccion_cliente : tiene
+    cliente ||--o{ pedido_online : realiza
+    direccion_cliente ||--o{ pedido_online : entrega
+    pedido_online ||--o{ linea_pedido : contiene
+    producto ||--o{ linea_pedido : vendido
+
+    pedido_online ||--o{ envio : genera
+    sede ||--o{ envio : origen
+    envio ||--o{ linea_envio : incluye
+    linea_pedido ||--o{ linea_envio : envia
+
+    sede ||--o{ venta_presencial : realiza
+    empleado ||--o{ venta_presencial : atiende
+    cliente ||--o{ venta_presencial : compra
+    venta_presencial ||--o{ linea_venta : contiene
+    producto ||--o{ linea_venta : vendido
+
+    venta_presencial ||--o{ devolucion_presencial : devuelve
+    devolucion_presencial ||--o{ linea_devolucion : contiene
+    linea_venta ||--o{ linea_devolucion : corresponde
+
+    producto ||--o{ stock : tiene
+    sede ||--o{ stock : almacena
+
+    producto ||--o{ transferencia_stock : mueve
+    sede ||--o{ transferencia_stock : origen_destino
+    empleado ||--o{ transferencia_stock : autoriza
+
+    producto ||--o{ promocion : tiene
+    cliente ||--o{ ticket_incidencia : abre
+    pedido_online ||--o{ ticket_incidencia : relacionado
+    empleado ||--o{ ticket_incidencia : gestiona
+
+    cliente ||--o{ valoracion : escribe
+    producto ||--o{ valoracion : recibe
+
+    cliente ||--o{ movimiento_puntos : acumula
+    pedido_online ||--o{ movimiento_puntos : genera
+```
