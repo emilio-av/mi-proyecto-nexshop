@@ -22,8 +22,6 @@ NexShop Group SA es una empresa dedicada al comercio minorista que combina una p
 
 # 📊 Diagrama Entidad-Relación
 
-# 📊 Diagrama Entidad-Relación
-
 ```mermaid
 erDiagram
     sede ||--o{ empleado : tiene
