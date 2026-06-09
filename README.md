@@ -9,7 +9,7 @@ Bienvenido al repositorio oficial del proyecto final de bases de datos para NexS
 # 👤 Información del Alumno
 
 - **Nombre:** Emilio Anaya Verdugo
-- **Curso:** 2º SMR / (o el que corresponda)
+- **Curso:** 2º SMR 
 - **GitHub:** https://github.com/emilio-av
 
 ---
