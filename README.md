@@ -112,3 +112,5 @@ mysql -u root -p nexshop < consultas/consultas.sql
 - SQL
 - Git
 - GitHub
+- Laragon
+- DBEAVER
